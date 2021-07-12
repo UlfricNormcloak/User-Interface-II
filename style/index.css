@@ -100,7 +100,14 @@ h1 {
     margin-left: 10%;
 }
 
-.section3Pics{
+/*.section3 {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}*/
+
+/*.section3Pics{
     display:flex;
     flex-wrap:wrap;
 }
@@ -117,11 +124,34 @@ h1 {
 
 .moveRight{
     padding: 0 0 0 225px;
+}*/
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*flex-wrap: nowrap;
+    justify-content: center;*/
+}
+
+.projects {
+    display: inline-block;
+    width: 30%;
+    height: fit-content;
 }
 
 .bambi{
-    width: 30%;
-    padding:10px 0px 10px 35px;
+    width: 90%;
+    padding:10px 0px 10px 25px;
+}
+
+.projectTitles{
+    width: 90%;
+    padding:0px 0px 10px 175px;
+    font-size: 24px;
+    font-style: arial;
+    color: brown;
 }
 
 /*Footer Styles*/
@@ -135,3 +165,4 @@ footer {
     padding: 20px;
     border-top: 15px solid white;
 }
+
