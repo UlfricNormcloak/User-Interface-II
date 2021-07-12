@@ -48,6 +48,13 @@ table {
 	border-spacing: 0;
 }
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
 /*general styles*/
 
 button{
@@ -100,31 +107,13 @@ h1 {
     margin-left: 10%;
 }
 
-/*.section3 {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-}*/
-
-/*.section3Pics{
-    display:flex;
-    flex-wrap:wrap;
-}
-
-.section3Titles{
-    display:flex;
-    justify-content: space-between;
-    color: blue;
-}
-
 .moveLeft{
     padding: 0 225px 0 0;
 }
 
 .moveRight{
     padding: 0 0 0 225px;
-}*/
+}
 
 .section3{
     display: flex;
@@ -164,48 +153,20 @@ footer {
     border-top: 15px solid white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px){
     .section1 {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
-        /*padding-left: 150px;*/
     }
 
     nav {
         display: flex;
         flex-direction: column;
         width: 120px;
+        padding-top: 20px;
     }
-    
-    /*.nameTitle{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nav{
-        display:flex;
-        flex-direction: column;
-        height: 250px;
-    }*/
-
-    /*.buttonsHeader {
-        display: flex;
-        flex-direction: column;
-    }*/
-
-    /*.nameTitle {
-        position: absolute;
-        top: 10px;
-        left: 250px;
-    }
-
-    .buttonsHeader {
-        position: absolute;
-        top: 50px;
-        left: 300px;
-    }*/
     
     h2{
         padding: 15px 0 0 0;
@@ -242,6 +203,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-left: 2%;
     }
     
     .projects{
@@ -252,12 +214,11 @@ footer {
     
     .bambi{
         width: 90%;
-        /*padding:10px 0px 10px 25px;*/
     }
     
     .projectTitles{
-        width: 90%;
-        padding:0px 0px 10px 125px;
+        width: 250px;
+        padding:0px 0px 10px 145px;
         font-size: 24px;
         font-style: arial;
         color: brown;
@@ -279,3 +240,37 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .mountain{
+        height: 500px;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .section2{
+        position:relative;
+        padding: 0 0 20px 0;
+    }
+    
+    .special{
+        position:absolute;
+        top: 250px;
+        left: 200px;
+    }
+    
+    h1 {
+        position:absolute;
+        top: 200px;
+        left: 88px;
+        font-size: 48px;
+        color: crimson;
+    }
+
+    .projectTitles{
+        width: 200px;
+        padding:0px 0px 10px 85px;
+        font-size: 24px;
+        font-style: arial;
+        color: brown;
+    }
+}
