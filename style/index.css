@@ -131,11 +131,9 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*flex-wrap: nowrap;
-    justify-content: center;*/
 }
 
-.projects {
+.projects{
     display: inline-block;
     width: 30%;
     height: fit-content;
@@ -164,5 +162,73 @@ footer {
     font-family: 'Open Sans', sans-serif;
     padding: 20px;
     border-top: 15px solid white;
+}
+
+@media (max-width: 800px) {
+    .section2{
+        position:relative;
+        padding: 0 0 20px 0;
+    }
+    
+    .special{
+        position:absolute;
+        top: 250px;
+        left: 350px;
+    }
+    
+    h1 {
+        position:absolute;
+        top: 200px;
+        left: 250px;
+        font-size: 48px;
+        color: crimson;
+    }
+    
+    .mountain{
+        height: 500px;
+        width:85%;
+        margin-left: 8%;
+    }
+    
+    .section3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .projects{
+        display: inline-block;
+        width: 50%;
+        height: fit-content;
+    }
+    
+    .bambi{
+        width: 90%;
+        /*padding:10px 0px 10px 25px;*/
+    }
+    
+    .projectTitles{
+        width: 90%;
+        padding:0px 0px 10px 125px;
+        font-size: 24px;
+        font-style: arial;
+        color: brown;
+    }  
+    
+    footer {
+        display:flex;
+        justify-content:center;
+        background:burlywood;
+        max-width: 800px;
+        height:auto;
+        font-family: 'Open Sans', sans-serif;
+        padding: 20px;
+        border-top: 15px solid white;
+    }
+
+    .buttonsFooter {
+        padding-left: 15px;
+    }
 }
 
